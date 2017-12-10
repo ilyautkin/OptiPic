@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<model package="optipic" baseClass="xPDOObject" platform="mysql" defaultEngine="InnoDB" phpdoc-package="optipic"
+       version="1.1">
+
+    <object class="OptiPicImage" table="optipic_images" extends="xPDOSimpleObject">
+        <field key="file" dbtype="text" phptype="text" null="true" default=""/>
+        <field key="optimized" dbtype="text" phptype="text" null="true" default=""/>
+    </object>
+
+</model>
