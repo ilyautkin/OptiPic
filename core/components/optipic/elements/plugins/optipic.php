@@ -6,7 +6,7 @@ if (!isset($_REQUEST[$alias])) {return false;}
 
 $request = $_REQUEST[$alias];
 
-$dirs = explode('/', ltrim($request));
+$dirs = explode('/', ltrim($request, '/'));
 $root = array_shift($dirs);
 if ($root != 'optipic.io') {return false;}
 

@@ -1,5 +1,9 @@
 Changelog for OptiPic.
 
+1.2.1-pl
+==============
+- Fix optipic.io url handling
+
 1.2.0-pl
 ==============
 - Added files indexation
