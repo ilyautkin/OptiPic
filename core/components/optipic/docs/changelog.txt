@@ -1,5 +1,9 @@
 Changelog for OptiPic.
 
+1.1.0-pl
+==============
+- Added SmushIt feature before sending to optipic
+
 1.0.0-pl
 ==============
 - First release

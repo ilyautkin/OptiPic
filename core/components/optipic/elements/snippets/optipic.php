@@ -52,6 +52,14 @@ if (!file_exists($optimized_file)) {
         return $file;
     }
     
+    if ($modx->getOption('optipic_smushit')) {
+        $site_url = $modx->getOption('site_url');
+        $image = json_decode(file_get_contents('http://api.resmush.it/ws.php?img=' . $site_url . $file));
+        if (!copy($image->dest, $fullpath)) {
+            $modx->log(MODX_LOG_LEVEL_ERROR, "[OptiPic] Can not smush file {$file}");
+        }
+    }
+    
     // Прикрепляем файл
     if (function_exists('curl_file_create')) { // php 5.5+
         $cFile = curl_file_create($fullpath);
