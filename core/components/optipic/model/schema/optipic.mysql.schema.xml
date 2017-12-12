@@ -5,6 +5,7 @@
     <object class="OptiPicImage" table="optipic_images" extends="xPDOSimpleObject">
         <field key="file" dbtype="text" phptype="text" null="true" default=""/>
         <field key="optimized" dbtype="text" phptype="text" null="true" default=""/>
+        <field key="indexed" dbtype="tinyint" phptype="boolean" null="false" default="0"/>
     </object>
 
 </model>

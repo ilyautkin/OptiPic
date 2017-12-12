@@ -8,6 +8,7 @@ $xpdo_meta_map['OptiPicImage']= array (
   array (
     'file' => '',
     'optimized' => '',
+    'indexed' => 0,
   ),
   'fieldMeta' => 
   array (
@@ -24,6 +25,13 @@ $xpdo_meta_map['OptiPicImage']= array (
       'phptype' => 'text',
       'null' => true,
       'default' => '',
+    ),
+    'indexed' => 
+    array (
+      'dbtype' => 'tinyint',
+      'phptype' => 'boolean',
+      'null' => false,
+      'default' => 0,
     ),
   ),
 );

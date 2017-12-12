@@ -5,7 +5,7 @@ return [
         'file' => 'optipic',
         'description' => '',
         'events' => [
-            'OnManagerPageInit' => [],
+            'OnPageNotFound' => [],
         ],
     ],
 ];
