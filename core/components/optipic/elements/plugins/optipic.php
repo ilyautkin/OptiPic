@@ -1,14 +1,14 @@
 <?php
 /** @var modX $modx */
-if ($modx->event->name != 'OnPageNotFound') {return false;}
+if ($modx->event->name != 'OnPageNotFound') {return;}
 $alias = $modx->context->getOption('request_param_alias', 'q');
-if (!isset($_REQUEST[$alias])) {return false;}
+if (!isset($_REQUEST[$alias])) {return;}
 
 $request = $_REQUEST[$alias];
 
 $dirs = explode('/', ltrim($request, '/'));
 $root = array_shift($dirs);
-if ($root != 'optipic.io') {return false;}
+if ($root != 'optipic.io') {return;}
 
 $OptiPic = $modx->getService('OptiPic', 'OptiPic', MODX_CORE_PATH . 'components/optipic/model/', $scriptProperties);
 if (!$OptiPic) {
