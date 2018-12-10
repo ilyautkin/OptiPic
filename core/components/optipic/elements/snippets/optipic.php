@@ -137,6 +137,12 @@ if (!file_exists($optimized_file)) {
             return $file;
             
         }
+    } else {
+        if ($info["http_code"]==401) {
+            $modx->log(MODX_LOG_LEVEL_ERROR, "[OptiPic] Wrong API key");
+        } else {
+            $modx->log(MODX_LOG_LEVEL_ERROR, "[OptiPic] API answer: " . print_r($info, true));
+        }
     }
     @unlink($tmpCompressedFile); // удаляем временный файл
 }
