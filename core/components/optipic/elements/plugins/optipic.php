@@ -21,7 +21,7 @@ $optipicCfg = array(
 
 if(isset($_GET["cmd"]) && $_GET["cmd"]=="getversion") {
     echo serialize(array(
-        "version" => "1.7",
+        "version" => "1.28",
     ));
     exit;
 }
