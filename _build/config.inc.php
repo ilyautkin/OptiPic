@@ -1,13 +1,13 @@
 <?php
 
 if (!defined('MODX_CORE_PATH')) {
-    define('MODX_CORE_PATH', dirname(dirname(dirname(dirname(__FILE__)))) . '/core/');
+    define('MODX_CORE_PATH', dirname(dirname(dirname(__FILE__))) . '/core/');
 }
 
 return [
     'name' => 'OptiPic',
     'name_lower' => 'optipic',
-    'version' => '1.2.1',
+    'version' => '1.2.2',
     'release' => 'pl',
     // Install package to site right after build
     'install' => true,

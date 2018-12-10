@@ -1,3 +1,3 @@
 <?php
-require_once (dirname(dirname(__FILE__)) . '/optipicimage.class.php');
+require_once (dirname(__DIR__) . '/optipicimage.class.php');
 class OptiPicImage_mysql extends OptiPicImage {}

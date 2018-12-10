@@ -4,6 +4,10 @@ $xpdo_meta_map['OptiPicImage']= array (
   'version' => '1.1',
   'table' => 'optipic_images',
   'extends' => 'xPDOSimpleObject',
+  'tableMeta' => 
+  array (
+    'engine' => 'InnoDB',
+  ),
   'fields' => 
   array (
     'file' => '',

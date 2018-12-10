@@ -1,5 +1,9 @@
 Changelog for OptiPic.
 
+1.2.2-pl
+==============
+- Changed API version
+
 1.2.1-pl
 ==============
 - Fix optipic.io url handling
