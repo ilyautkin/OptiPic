@@ -1,8 +1,12 @@
 Changelog for OptiPic.
 
+1.2.3-pl
+==============
+- Changed API version to 1.31
+
 1.2.2-pl
 ==============
-- Changed API version
+- Changed API version to 1.28
 
 1.2.1-pl
 ==============

@@ -7,7 +7,7 @@ if (!defined('MODX_CORE_PATH')) {
 return [
     'name' => 'OptiPic',
     'name_lower' => 'optipic',
-    'version' => '1.2.2',
+    'version' => '1.2.3',
     'release' => 'pl',
     // Install package to site right after build
     'install' => true,
